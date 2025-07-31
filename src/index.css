@@ -1,0 +1,144 @@
+/* Y2K Aesthetic CSS with Pink and Silver Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Y2K Pink and Silver Color Palette */
+  --primary-pink: #ff69b4;
+  --hot-pink: #ff1493;
+  --light-pink: #ffb6c1;
+  --baby-pink: #ffc0cb;
+  --silver: #c0c0c0;
+  --chrome: #e8e8e8;
+  --metallic: #b8b8b8;
+  --dark-silver: #a0a0a0;
+  
+  /* Gradients */
+  --pink-gradient: linear-gradient(135deg, var(--hot-pink) 0%, var(--primary-pink) 50%, var(--light-pink) 100%);
+  --silver-gradient: linear-gradient(135deg, var(--chrome) 0%, var(--silver) 50%, var(--metallic) 100%);
+  --holographic: linear-gradient(45deg, #ff1493, #ff69b4, #00bfff, #ff69b4, #ff1493);
+  
+  /* Shadows and Effects */
+  --glow-pink: 0 0 20px rgba(255, 20, 147, 0.6);
+  --glow-silver: 0 0 15px rgba(192, 192, 192, 0.4);
+  --metallic-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.1);
+  
+  /* Typography */
+  font-family: 'Space Grotesk', 'Orbitron', system-ui, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  
+  /* Base Colors */
+  color: #333;
+  background: linear-gradient(135deg, #ffeef7 0%, #f0f0f0 50%, #e8e8e8 100%);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 20, 147, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(192, 192, 192, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, #ffeef7 0%, #f5f5f5 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Y2K Button Styles */
+button {
+  border-radius: 20px;
+  border: 2px solid var(--silver);
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Orbitron', monospace;
+  background: var(--silver-gradient);
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--metallic-shadow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background: var(--pink-gradient);
+  color: white;
+  border-color: var(--hot-pink);
+  box-shadow: var(--glow-pink), var(--metallic-shadow);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-pink), 0 0 0 3px rgba(255, 20, 147, 0.3);
+}
+
+/* Y2K Typography */
+h1, h2, h3 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  background: var(--holographic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--chrome);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink-gradient);
+  border-radius: 10px;
+  border: 2px solid var(--chrome);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hot-pink);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary-pink);
+  color: white;
+}
