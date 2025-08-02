@@ -31,14 +31,14 @@ import neonNightsAudio from '../assets/audio/neon-nights.wav';
 import holographicHeartAudio from '../assets/audio/holographic-heart.mp3';
 import chromeDreamsAudio from '../assets/audio/chrome-dreams.mp3';
 
-// Update the sampleSongs array
+
 const sampleSongs: Song[] = [
   {
     id: '1',
     title: 'Digital Love',
     artist: 'Daft Punk',
-    duration: 501, // Update with real duration in seconds
-    audioUrl: digitalLoveAudio, // Use imported audio
+    duration: 501,
+    audioUrl: digitalLoveAudio, 
     coverArt: '🎵'
   },
   {
@@ -49,7 +49,7 @@ const sampleSongs: Song[] = [
     audioUrl: neonNightsAudio,
     coverArt: '💿'
   },
-  // ... more songs
+
 ];
 ```
 

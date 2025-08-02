@@ -3,7 +3,7 @@ import { PlaylistLinkedList, type Song } from '../utils/PlaylistLinkedList';
 import digitalLoveAudio from '../assets/audio/digital-love.mp3';
 import './MusicPlayer.css';
 
-// Sample songs for demo (replace with actual audio files)
+
 const sampleSongs: Song[] = [
   {
     id: '1',
@@ -26,7 +26,7 @@ const sampleSongs: Song[] = [
     title: 'Holographic Heart',
     artist: 'Tech Angel',
     duration: 312,
-    audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', // placeholder
+    audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', 
     coverArt: '💖'
   },
   {
@@ -34,7 +34,7 @@ const sampleSongs: Song[] = [
     title: 'Chrome Dreams',
     artist: 'Silver Starlet',
     duration: 267,
-    audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', // placeholder
+    audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', 
     coverArt: '✨'
   }
 ];

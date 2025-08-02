@@ -1,4 +1,4 @@
-/* Y2K Aesthetic CSS with Pink and Silver Theme */
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -98,7 +98,7 @@ button:focus-visible {
   box-shadow: var(--glow-pink), 0 0 0 3px rgba(255, 20, 147, 0.3);
 }
 
-/* Y2K Typography */
+
 h1, h2, h3 {
   font-family: 'Orbitron', monospace;
   font-weight: 700;
@@ -117,7 +117,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Scrollbar Styling */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -137,7 +137,7 @@ h1 {
   background: var(--hot-pink);
 }
 
-/* Selection */
+
 ::selection {
   background: var(--primary-pink);
   color: white;

@@ -14,7 +14,7 @@
   background-attachment: fixed;
 }
 
-/* Additional Y2K decorative elements */
+
 .app::before {
   content: '';
   position: fixed;
